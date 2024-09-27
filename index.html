@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PJ WALLET</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle, rgba(50, 150, 250, 1), rgba(0, 100, 200, 1));
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        h1 {
+            font-size: 60px;
+            color: #fff;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(50, 150, 250, 1));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: logoAnimation 7s infinite alternate;
+        }
+
+        .logo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(0, 100, 200, 0.8));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(50, 150, 250, 0.6);
+        }
+
+        .logo img {
+            width: 100px;
+            height: 100px;
+        }
+
+        @keyframes logoAnimation {
+            0% { transform: rotate(0); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        footer {
+            position: fixed;
+            bottom: 10px;
+            color: #fff;
+            font-size: 14px;
+            margin-left:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            
+        </div>
+        <h1>PJ WALLET</h1>
+        <footer>&copy; 2024 PJ WALLET. All rights reserved.</footer>
+    </div>
+
+    <script>
+        setTimeout(function(){
+            window.location.href = "main.html";
+        }, 7000);
+    </script>
+</body>
+</html>
